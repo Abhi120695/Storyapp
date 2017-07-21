@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.abhishek_pc.interactivestory" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="FindYourWay!"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".ui.MainActivity"
+            android:label="FindYourWay!"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.Story1Activity"
+            android:label="@string/title_activity_story1"
+            android:parentActivityName=".ui.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.Story2"
+            android:label="@string/title_activity_story2"
+            android:parentActivityName=".ui.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.abhishek_pc.interactivestory.ui.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.dsagame1"
+            android:label="@string/title_activity_dsagame1"
+            android:parentActivityName=".ui.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.abhishek_pc.interactivestory.ui.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.Dsagame1"
+            android:label="@string/title_activity_dsagame1"
+            android:parentActivityName=".ui.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.abhishek_pc.interactivestory.ui.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.Riddle1"
+            android:label="@string/title_activity_riddle1"
+            android:parentActivityName=".ui.MainActivity"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.abhishek_pc.interactivestory.ui.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.Dsagame2"
+            android:label="@string/title_activity_dsagame2"
+            android:parentActivityName=".ui.MainActivity"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.abhishek_pc.interactivestory.ui.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>
